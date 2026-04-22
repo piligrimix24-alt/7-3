@@ -1,0 +1,199 @@
+.benefit {
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  min-height: 480px;
+  padding: 20px;
+  background-size: cover;
+  border: 2px solid $color-white;
+
+  @include vp-1023 {
+    width: 300px;
+    min-height: 400px;
+    max-height: 400px;
+    padding: 0;
+  }
+
+  @include vp-767 {
+    width: 260px;
+    min-height: 350px;
+    margin: 0 auto;
+  }
+
+  &--round-all {
+    border-radius: 180px;
+  }
+
+  &--apartment {
+    background-image: url("../../images/image-apartment.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/image-apartment@2x.jpg");
+    }
+  }
+
+  &--pond {
+    background-image: url("../../images/image-pond.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/image-pond@2x.jpg");
+    }
+  }
+
+  &--entrance {
+    background-image: url("../../images/image-view-entrance-building.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/image-view-entrance-building@2x.jpg");
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  &--unique {
+    background-image: url("../../images/image-night-park.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/image-night-park@2x.jpg");
+    }
+  }
+
+  &--flats {
+    background-image: url("../../images/image-top-building.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/image-top-building@2x.jpg");
+    }
+
+    width: 100%;
+    min-height: 700px;
+    border: none;
+    position: relative;
+    padding-top: 180px;
+    background-size: cover;
+    background-position: center;
+
+    @include vp-1023 {
+      min-height: 374px;
+      padding-top: 70px;
+      background-size: cover;
+    }
+
+    @include vp-767 {
+      min-height: 200px;
+      padding-top: 0;
+      background-size: cover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(180deg, $color-cerulean-blue-0 0%, $color-cerulean-blue-60 46.28%, $color-cerulean-blue 89%);
+
+      @include vp-1023 {
+        height: 100px;
+      }
+
+      @include vp-767 {
+        height: 50px;
+      }
+    }
+  }
+
+  &--silence {
+    background-image: url("../../images/image-child-sleep.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/image-child-sleep@2x.jpg");
+    }
+  }
+
+  &__number {
+    margin: 0 0 16px;
+    font-size: 80px;
+    font-family: $ff-ardeco;
+    line-height: 60px;
+
+    @include vp-1023 {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 8px;
+    }
+
+    @include vp-767 {
+      font-size: 56px;
+      line-height: 50px;
+      margin-bottom: 8px;
+    }
+
+    &--smaller {
+      @include vp-1023 {
+        font-size: 56px;
+        line-height: 50px;
+        margin-bottom: 8px;
+      }
+
+      @include vp-767 {
+        font-size: 56px;
+        line-height: 50px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__text {
+    margin: 0 0 24px;
+    font-size: 22px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include vp-1023 {
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 20px;
+    }
+
+    &--smaller {
+      @include vp-1023 {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 20px;
+      }
+
+      @include vp-767 {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__icon {
+    @include vp-1023 {
+      width: 50px;
+      height: 8px;
+    }
+
+    @include vp-767 {
+      width: 50px;
+      height: 8px;
+    }
+  }
+}

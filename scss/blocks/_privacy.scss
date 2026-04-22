@@ -1,0 +1,126 @@
+.privacy {
+  padding: 80px 0 0;
+
+  @include vp-767 {
+    padding-top: 60px;
+  }
+
+  &__wrapper {
+    column-gap: 220px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 360px 420px;
+
+    @include vp-1023 {
+      grid-template-columns: 300px 340px;
+      column-gap: 60px;
+    }
+
+    @include vp-767 {
+      grid-template-columns: 345px;
+      grid-template-rows: 350px 366px;
+      row-gap: 32px;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__heading {
+    margin: 0 0 24px;
+    font-size: 64px;
+    font-family: $ff-ardeco;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+
+    @include vp-1023 {
+      font-size: 46px;
+      line-height: 46px;
+      margin-bottom: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 36px;
+      line-height: 34px;
+      margin: 0 0 16px;
+    }
+  }
+
+  &__text,
+  &__list-item {
+    font-weight: 300;
+    line-height: 22px;
+
+    @include vp-1023 {
+      max-width: 340px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 18px;
+      max-width: 345px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 16px;
+
+    @include vp-767 {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__list {
+    row-gap: 4px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 32px;
+    padding: 0 0 0 16px;
+    font-size: 16px;
+
+    @include vp-767 {
+      padding-bottom: 24px;
+      margin: 0;
+    }
+  }
+
+  &__link {
+    column-gap: 12px;
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 14px;
+      gap: 8px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-polo-blue;
+    }
+  }
+
+  &__link-icon {
+    pointer-events: none;
+
+    @include vp-767 {
+      width: 46px;
+      height: 32px;
+    }
+  }
+}

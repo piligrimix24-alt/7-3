@@ -1,0 +1,68 @@
+.privacy-hero {
+    padding: 48px 0 0;
+
+    @include vp-1023 {
+        padding: 40px 0 0;
+    }
+
+    @include vp-767 {
+        padding: 32px 0 0;
+    }
+
+    &__heading {
+        font-size: 70px;
+        line-height: 70px;
+        font-family: $ff-ardeco;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0;
+
+        @include vp-1023 {
+            font-size: 50px;
+            line-height: 50px;
+        }
+
+        @include vp-767 {
+            font-size: 44px;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 360px 420px;
+        column-gap: 220px;
+
+        @include vp-1023 {
+            grid-template-columns: 340px 340px;
+            column-gap: 48px;
+        }
+
+        @include vp-767 {
+            grid-template-columns: 345px;
+            row-gap: 16px;
+            align-items: center;
+        }
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 400;
+        margin: 0;
+
+        @include vp-1023 {
+            max-width: 340px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        @include vp-767 {
+            font-size: 14px;
+            line-height: 20px;
+            max-width: 345px;
+            text-align: center;
+        }
+    }
+}

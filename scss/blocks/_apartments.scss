@@ -1,0 +1,107 @@
+.apartments {
+  padding: 80px 0 0;
+
+  @include vp-1023 {
+    padding-top: 80px;
+  }
+
+  @include vp-767 {
+    padding-top: 60px;
+  }
+
+  &__wrapper {
+    column-gap: 220px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 420px 360px;
+
+    @include vp-1023 {
+      grid-template-columns: 340px 300px;
+      column-gap: 88px;
+      align-items: flex-start;
+    }
+
+    @include vp-767 {
+      grid-template-columns: 345px;
+      grid-template-rows: 334px 350px;
+      row-gap: 32px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    margin: 0 0 32px;
+    pointer-events: none;
+
+    @include vp-1023 {
+      width: 50px;
+      height: 8px;
+    }
+
+    @include vp-767 {
+      width: 50px;
+      height: 8px;
+    }
+  }
+
+  &__description {
+    margin: 0 0 32px;
+    font-size: 18px;
+    line-height: 24px;
+
+    @include vp-1023 {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 24px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    margin: 20px 0 16px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__list {
+    row-gap: 4px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 0 0 16px;
+  }
+
+  &__list-item {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
