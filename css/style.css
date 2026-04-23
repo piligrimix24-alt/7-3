@@ -677,13 +677,11 @@ a {
 }
 @media (max-width: 1023px) {
   .hero__image {
-    height: 400px;
     margin-top: 40px;
   }
 }
 @media (max-width: 767px) {
   .hero__image {
-    height: 200px;
     margin-top: 32px;
   }
 }
@@ -843,6 +841,26 @@ a {
     background-image: url("../../images/image-apartment@2x.jpg");
   }
 }
+@media (max-width: 1023px) {
+  .benefit--apartment {
+    background-image: url("../../images/image-apartment-tablet.jpg");
+  }
+}
+@media (max-width: 1023px) and (min-resolution: 2dppx) {
+  .benefit--apartment {
+    background-image: url("../../images/image-apartment-tablet@2x.jpg");
+  }
+}
+@media (max-width: 767px) {
+  .benefit--apartment {
+    background-image: url("../../images/image-apartment-mobile.jpg");
+  }
+}
+@media (max-width: 767px) and (min-resolution: 2dppx) {
+  .benefit--apartment {
+    background-image: url("../../images/image-apartment-mobile@2x.jpg");
+  }
+}
 .benefit--pond {
   background-image: url("../../images/image-pond.jpg");
 }
@@ -851,12 +869,42 @@ a {
     background-image: url("../../images/image-pond@2x.jpg");
   }
 }
+@media (max-width: 1023px) {
+  .benefit--pond {
+    background-image: url("../../images/image-pond-tablet.jpg");
+  }
+}
+@media (max-width: 1023px) and (min-resolution: 2dppx) {
+  .benefit--pond {
+    background-image: url("../../images/image-pond-tablet@2x.jpg");
+  }
+}
+@media (max-width: 767px) {
+  .benefit--pond {
+    background-image: url("../../images/image-pond-mobile.jpg");
+  }
+}
+@media (max-width: 767px) and (min-resolution: 2dppx) {
+  .benefit--pond {
+    background-image: url("../../images/image-pond-mobile@2x.jpg");
+  }
+}
 .benefit--entrance {
   background-image: url("../../images/image-view-entrance-building.jpg");
 }
 @media (min-resolution: 2dppx) {
   .benefit--entrance {
     background-image: url("../../images/image-view-entrance-building@2x.jpg");
+  }
+}
+@media (max-width: 1023px) {
+  .benefit--entrance {
+    background-image: url("../../images/image-view-entrance-building-tablet.jpg");
+  }
+}
+@media (max-width: 1023px) and (min-resolution: 2dppx) {
+  .benefit--entrance {
+    background-image: url("../../images/image-view-entrance-building-tablet@2x.jpg");
   }
 }
 @media (max-width: 767px) {
@@ -872,12 +920,52 @@ a {
     background-image: url("../../images/image-night-park@2x.jpg");
   }
 }
+@media (max-width: 1023px) {
+  .benefit--unique {
+    background-image: url("../../images/image-night-park-tablet.jpg");
+  }
+}
+@media (max-width: 1023px) and (min-resolution: 2dppx) {
+  .benefit--unique {
+    background-image: url("../../images/image-night-park-tablet@2x.jpg");
+  }
+}
+@media (max-width: 767px) {
+  .benefit--unique {
+    background-image: url("../../images/image-night-park-mobile.jpg");
+  }
+}
+@media (max-width: 767px) and (min-resolution: 2dppx) {
+  .benefit--unique {
+    background-image: url("../../images/image-night-park-mobile@2x.jpg");
+  }
+}
 .benefit--flats {
   background-image: url("../../images/image-top-building.jpg");
 }
 @media (min-resolution: 2dppx) {
   .benefit--flats {
     background-image: url("../../images/image-top-building@2x.jpg");
+  }
+}
+@media (max-width: 1023px) {
+  .benefit--flats {
+    background-image: url("../../images/image-top-building-tablet.jpg");
+  }
+}
+@media (max-width: 1023px) and (min-resolution: 2dppx) {
+  .benefit--flats {
+    background-image: url("../../images/image-top-building-tablet@2x.jpg");
+  }
+}
+@media (max-width: 767px) {
+  .benefit--flats {
+    background-image: url("../../images/image-top-building-mobile.jpg");
+  }
+}
+@media (max-width: 767px) and (min-resolution: 2dppx) {
+  .benefit--flats {
+    background-image: url("../../images/image-top-building-mobile@2x.jpg");
   }
 }
 .benefit--flats {
@@ -928,6 +1016,26 @@ a {
 @media (min-resolution: 2dppx) {
   .benefit--silence {
     background-image: url("../../images/image-child-sleep@2x.jpg");
+  }
+}
+@media (max-width: 1023px) {
+  .benefit--silence {
+    background-image: url("../../images/image-child-sleep-tablet.jpg");
+  }
+}
+@media (max-width: 1023px) and (min-resolution: 2dppx) {
+  .benefit--silence {
+    background-image: url("../../images/image-child-sleep-tablet@2x.jpg");
+  }
+}
+@media (max-width: 767px) {
+  .benefit--silence {
+    background-image: url("../../images/image-child-sleep-mobile.jpg");
+  }
+}
+@media (max-width: 767px) and (min-resolution: 2dppx) {
+  .benefit--silence {
+    background-image: url("../../images/image-child-sleep-mobile@2x.jpg");
   }
 }
 .benefit__number {

@@ -59,9 +59,17 @@
         </h2>
       </div>
       <div class="hero__img-wrapper">
-        <img class="hero__image" src="images/image-foreground-building.jpg"
-          srcset="images/image-foreground-building.jpg 1x, images/image-foreground-building@2x.jpg 2x" width="1440"
-          height="760" alt="Передний план клубного дома">
+        <picture class="hero__picture">
+          <source media="(max-width: 767px)"
+            srcset="images/image-foreground-building-mobile.jpg 1x, images/image-foreground-building-mobile@2x.jpg 2x"
+            width="375" height="200">
+          <source media="(max-width: 1023px)"
+            srcset="images/image-foreground-building-tablet.jpg 1x, images/image-foreground-building-tablet@2x.jpg 2x"
+            width="768" height="400">
+          <source srcset="images/image-foreground-building.jpg 1x, images/image-foreground-building@2x.jpg 2x"
+            width="1440" height="760">
+          <img class="hero__image" src="images/image-foreground-building.jpg" alt="Передний план клубного дома">
+        </picture>
       </div>
     </section>
     <section class="apartments">
@@ -121,9 +129,17 @@
         </p>
       </div>
       <div class="real-beauty__img-wrapper">
-        <img class="real-beauty__image" src="images/image-top-view-building.jpg"
-          srcset="images/image-top-view-building.jpg 1x, images/image-top-view-building@2x.jpg 2x" width="1440"
-          height="700" alt="Вид сверху на клубный дом">
+        <picture class="real-beauty__picture">
+          <source media="(max-width: 767px)"
+            srcset="images/image-top-view-building-mobile.jpg 1x, images/image-top-view-building-mobile@2x.jpg 2x"
+            width="375" height="200">
+          <source media="(max-width: 1023px)"
+            srcset="images/image-top-view-building-tablet.jpg 1x, images/image-top-view-building-tablet@2x.jpg 2x"
+            width="768" height="374">
+          <source srcset="images/image-top-view-building.jpg 1x, images/image-top-view-building@2x.jpg 2x" width="1440"
+            height="700">
+          <img class="real-beauty__image" src="images/image-top-view-building.jpg" alt="Вид сверху на клубный дом">
+        </picture>
       </div>
     </section>
     <section class="privacy">

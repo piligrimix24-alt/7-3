@@ -34,6 +34,22 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/image-apartment@2x.jpg");
     }
+
+    @include vp-1023 {
+      background-image: url("../../images/image-apartment-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/image-apartment-tablet@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../../images/image-apartment-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/image-apartment-mobile@2x.jpg");
+      }
+    }
   }
 
   &--pond {
@@ -42,6 +58,22 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/image-pond@2x.jpg");
     }
+
+    @include vp-1023 {
+      background-image: url("../../images/image-pond-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/image-pond-tablet@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../../images/image-pond-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/image-pond-mobile@2x.jpg");
+      }
+    }
   }
 
   &--entrance {
@@ -49,6 +81,14 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/image-view-entrance-building@2x.jpg");
+    }
+
+    @include vp-1023 {
+      background-image: url("../../images/image-view-entrance-building-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/image-view-entrance-building-tablet@2x.jpg");
+      }
     }
 
     @include vp-767 {
@@ -62,6 +102,22 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/image-night-park@2x.jpg");
     }
+
+    @include vp-1023 {
+      background-image: url("../../images/image-night-park-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/image-night-park-tablet@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../../images/image-night-park-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/image-night-park-mobile@2x.jpg");
+      }
+    }
   }
 
   &--flats {
@@ -69,6 +125,22 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/image-top-building@2x.jpg");
+    }
+
+    @include vp-1023 {
+      background-image: url("../../images/image-top-building-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/image-top-building-tablet@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../../images/image-top-building-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/image-top-building-mobile@2x.jpg");
+      }
     }
 
     width: 100%;
@@ -115,6 +187,22 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/image-child-sleep@2x.jpg");
+    }
+
+    @include vp-1023 {
+      background-image: url("../../images/image-child-sleep-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/image-child-sleep-tablet@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../../images/image-child-sleep-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/image-child-sleep-mobile@2x.jpg");
+      }
     }
   }
 
